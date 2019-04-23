@@ -13,7 +13,7 @@ y = dataset.iloc[:, 2].values
 sc_X = StandardScaler()
 sc_y = StandardScaler()
 X = sc_X.fit_transform(X)
-y = sc_y.fit_transform(y)
+y = np.ravel(sc_y.fit_transform(y.reshape(-1, 1)))
 
 # Fitting SVR to the dataset
 regressor = SVR(kernel = 'rbf')
