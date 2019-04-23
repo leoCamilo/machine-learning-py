@@ -1,12 +1,10 @@
-# Simple Linear Regression
-
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-dataset = pd.read_csv('')
 dataset = pd.read_csv('../data/Salary_Data.csv')
 
 #think as a function, X is the variable, y is the answer for that variable (dependent variable)
